@@ -80,3 +80,14 @@ Open `nb_signals_correlation.ipynb` first. Use **Kernel > Restart Kernel and Run
 ## Credits and Acknowledgements
 
 UCI Wine Recognition dataset from the UCI Machine Learning Repository. Environmental health dataset (ozone, temperature, humidity, deaths) drawn from classic epidemiology teaching examples.
+---
+
+## Contact
+
+<div align="center">
+  <img src="images/thumbnails/ehcastroh_teach_banner_flower.png" alt="ehcastroh" width="90" style="border-radius: 50%;" />
+
+  <sub>ehcastroh</sub>
+
+  <a href="https://github.com/ehcastroh">GitHub</a> · <a href="https://www.linkedin.com/in/ehcastroh/">LinkedIn</a>
+</div>
