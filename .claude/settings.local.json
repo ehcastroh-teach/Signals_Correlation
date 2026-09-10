@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(prep-teaching-repo)",
+      "Read(//home/elcasnix/.claude/skills/prep-teaching-repo/scripts/**)",
+      "Read(//home/elcasnix/.claude/skills/prep-teaching-repo/references/**)",
+      "Bash(python3 -c \"import numpy, pandas, matplotlib, scipy, sklearn; print\\('all deps present'\\)\")",
+      "Bash(python3 -m nbconvert --version)"
+    ]
+  }
+}
