@@ -67,17 +67,24 @@ Section 3 uses the UCI Wine Recognition dataset (178 wines, 13 chemical features
 
 ## How to Run
 
+Prerequisites: [Nix](https://nixos.org/download) with flakes enabled.
+
+This repo's Python environment is fully project-local - a `flake.nix` devShell provides Python and `uv`, and `uv` installs every dependency pinned in `pyproject.toml`/`uv.lock` into a `.venv` inside this directory. Nothing is installed system-wide.
+
 ```bash
 # Clone and enter the repo
 git clone https://github.com/ehcastroh-teach/Signals_Correlation
 cd Signals_Correlation
 
-# Install dependencies (requires Python 3.10+)
-pip install -r requirements.txt
+# Enter the dev shell - this also runs `uv sync` automatically
+# the first time, creating .venv with every pinned dependency installed
+nix develop
 
 # Launch JupyterLab
-jupyter lab
+uv run jupyter lab
 ```
+
+If you don't use Nix, any Python 3.12+ environment with `uv` installed works the same way: run `uv sync` in place of `nix develop` and use the `uv run ...` command above unchanged.
 
 Open `nb_signals_correlation.ipynb` first. Use **Kernel > Restart Kernel and Run All Cells** to verify a clean run before beginning the homework. Then open `hw_signals_correlation.ipynb` and work through Sections 1 to 3 in order - each section builds on vocabulary introduced in the previous one.
 
